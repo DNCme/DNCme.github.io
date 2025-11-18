@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Bounded';
+    src: url('bounbed/Bounded-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, p, h2, h3 {
+    color: rgb(12, 12, 12);
+    font-family: "Bounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.tx23 {
+    margin: 20vh 0vh;
+    margin-bottom: 5vh;
+}
+
+.gtd {
+    margin: 5px;
+    width: 40vh;
+    height: 7.5vh;
+    color: rgb(212, 212, 212);
+    font-family: "Bounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    border-radius: 2.5vh;
+    border: 2px rgba(0, 0, 0, 0.6) solid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) scale(1);
+    font-size: 3vh;
+    cursor: pointer;
+    outline: 0px rgba(0, 0, 0, 1) dashed;
+    outline-offset: 5px;
+    transition: transform cubic-bezier(.18,.58,.33,.69) 0.35s, outline-width linear 0.3s;
+
+}
+
+.gtdp {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+    width: 80vh;
+}
+
+.gtdp1 {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+    width: 80vh;
+}
+
+.gtd:hover {
+    transform: translate(-50%) scale(1.04);
+    outline-width: 5px;
+}
+
+.gtd:active {
+    transition: 0s;
+    outline-width: 2px;
+}
+
+body {
+    margin: 0% 10%;
+}
+
+* {
+    transition: all cubic-bezier(.18,.58,.33,.69) 0.35s;
+}
+
+@media (max-width: 1680px) {
+    body {
+        margin: 0% 1.25vh;
+    }
+}
+
+.blackmg {
+    display: block;
+}
+
+.whitemg {
+    display: none;
+}
+
+.headmg {
+    width: 10vh;
+    margin: 2vh;
+}
+
+.header:hover {
+    transform: scale(1.03);
+}
+
+.headmg:hover {
+    transform: scale(1.05);
+}
+
+.headtxt:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    perspective: 100vh;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(27px);
+    top: 0;
+    z-index: 9999;
+    border-radius: 3vh;
+    border-top-left-radius: 0vh;
+    border-top-right-radius: 0vh;
+}
+
+.scs {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scs:hover {
+    transform: scale(1.05);
+}
+
+.headtxt {
+    font-size: 5vh;
+}
+
+@media (max-width: 1068px) {
+    body {
+        margin: 0% 5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0% 1.25vh;
+    }
+    .headmg:hover {
+        transform: scale(1) scaleY(1);
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 16/10) {
+    body {
+        margin: 0% 30.25vh;
+    }
+    .headmg {
+        width: 7.5vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(12, 12, 12);
+    }
+    .header {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    h1, p, h2, h3 {
+        color: white;
+    }
+    .blackmg {
+        display: none;
+    }
+    .whitemg {
+        display: block;
+    }
+    .gtd {
+        color: rgb(12, 12, 12);
+        background-color: rgb(255, 255, 255);;
+        border-radius: 2.5vh;
+        border: 0px rgb(255, 255, 255) solid;
+        outline-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.foot {
+    font-family: "Bounded", sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0vh 2vh;
+    padding: 1.5vh 5vh;
+    border-top-left-radius: 2.5vh;
+    border-top-right-radius: 2.5vh;
+    padding-bottom: 3.3vh;
+    position: absolute;
+    top: 175%;
+    width: 50vh;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+}
