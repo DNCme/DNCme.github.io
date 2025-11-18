@@ -3,7 +3,7 @@ This - discord server site
 
 The site's creator didn't mean to insult or humiliate the rustme team, but only to help the community unite in one server. The creator didn't earn a penny from this discord server.
 
-copyright / licenses on DNCme.github.io/bounded/COPYRIGHT.TXT / DNCme.github.io/bounded/LICENSE.TXT
+copyright / licenses on DNCme.github.io/bounded/COPYRIGHT.txt / DNCme.github.io/bounded/LICENSE.txt
 
 Bounded font
 Copyright: © Vlad Churkin
