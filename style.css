@@ -16,6 +16,7 @@ h1, p, h2, h3 {
 .tx23 {
     margin: 20vh 0vh;
     margin-bottom: 5vh;
+    cursor: default;
 }
 
 .gtd {
@@ -38,7 +39,16 @@ h1, p, h2, h3 {
     outline: 0px rgba(0, 0, 0, 1) dashed;
     outline-offset: 5px;
     transition: transform cubic-bezier(.18,.58,.33,.69) 0.35s, outline-width linear 0.3s;
+}
 
+.sk {
+    display: inline-flex;
+    letter-spacing: 0.05vh;
+}
+
+.sk:hover {
+    transform: scale(1.04);
+    letter-spacing: 0.07vh;
 }
 
 .gtdp {
